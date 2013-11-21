@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chen.chinaos.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <application
+        android:name="com.chen.chinaos.app.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.chen.chinaos.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.chen.chinaos.ui.MainActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.NewsActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.QuestionsActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.TweetsActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.ActivesActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.MoreActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.LatestBlogactivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.LatestNewsActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.LatestReadActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.AnswerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.ShareBlogactivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.CompositeActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.CareerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.chinaos.ui.OfficeActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+    </application>
+
+</manifest>
